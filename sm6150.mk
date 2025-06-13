@@ -100,6 +100,9 @@ PRODUCT_PACKAGES += \
     libldacBT_abr \
     libldacBT_enc
 
+# Blur
+TARGET_ENABLE_BLUR := true
+
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
