@@ -103,6 +103,9 @@ PRODUCT_PACKAGES += \
 # Blur
 TARGET_ENABLE_BLUR := true
 
+# MIUICamera
+$(call inherit-product-if-exists, vendor/xiaomi/miuicamera/config.mk)
+
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
@@ -116,9 +119,6 @@ PRODUCT_COPY_FILES += \
 
 # Device as WebCam
 TARGET_BUILD_DEVICE_AS_WEBCAM := true
-
-# MIUICamera
-$(call inherit-product-if-exists, vendor/xiaomi/miuicamera/config.mk)
 
 # Device-specific settings
 PRODUCT_PACKAGES += \
